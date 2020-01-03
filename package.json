@@ -1,0 +1,22 @@
+{
+  "name": "pdfgenerator",
+  "version": "1.0.0",
+  "description": "pdfgenerator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jupton2020/PDFgenerator.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "Jaqueline Upton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jupton2020/PDFgenerator/issues"
+  },
+  "homepage": "https://github.com/Jupton2020/PDFgenerator#readme"
+}
