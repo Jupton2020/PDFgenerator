@@ -18,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/Jupton2020/PDFgenerator/issues"
   },
-  "homepage": "https://github.com/Jupton2020/PDFgenerator#readme"
+  "homepage": "https://github.com/Jupton2020/PDFgenerator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^7.0.1"
+  }
 }
