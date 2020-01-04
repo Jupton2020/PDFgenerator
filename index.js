@@ -1,6 +1,6 @@
+const fs = require("fs");
 const axios = require("axios");
 const inquirer = require("inquirer");
-const fs = require("fs");
 var generateHTML = require("./generateHTML");
 const path = require("path");
 var convertapi = require('convertapi')('jEiQE3KMpaUiVZt7');
@@ -28,20 +28,20 @@ function init() {
         axios
         .get(queryUrl)
         .then(function(response){
-const resp = response.data;
+const res = response.data;
 response.data.color = colorchoice;
-const name = resp.name;
-const biography = resp.bio;
-const pubRepos = resp.public_repos;
-const follow = resp.followers;
-const star = resp.starred_url.split(",")
-resp.stars = star.length;
-const following = resp.following;
+const name = res.name;
+const userBio = res.bio;
+const publicRepos = res.public_repos;
+const followers = res.followers;
+const starred = res.starred_url.split(",")
+res.stars = starred.length;
+const following = res.following;
 
-console.log(name, `\n`, biography, `\n`,pubRepos, `\n`, follow, `\n`, following)
-console.log(resp)
+console.log(res)
+console.log(name, `\n`, userBio, `\n`,publicRepos, `\n`, followers, `\n`, following)
 
-const html= generateHTML(resp);
+const html= generateHTML(res);
 writeToFile("profile.html", html);
 
 })
@@ -52,7 +52,7 @@ convertapi.convert('pdf', {File: './profile.html'})
 .then(function(file){
     console.log("file saved:"+ file);
 });
-    })
+ })
 }
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(),fileName),data);
