@@ -15,4 +15,5 @@
 
 * The background color of the generated PDF matches the color that the user provides.
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Jupton2020/PDFgenerator/blob/master/img/Screen%20Shot%202020-01-03%20at%209.52.11%20PM.png)
+
