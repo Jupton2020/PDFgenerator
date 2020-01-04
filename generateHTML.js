@@ -181,24 +181,24 @@ function generateHTML(data) {
                 <h5>${data.company ? `Currently working @ ${data.company}` : ""}</h5>
                 <nav class="links-nav">
                    ${
-                     data.location
-                       ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/${
-                           data.location
-                         }"><i class="fas fa-location-arrow"></i> ${
-                           data.location
-                         }</a>`
-                       : ""
-                   }
+    data.location
+      ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/place/${
+      data.location
+      }"><i class="fas fa-location-arrow"></i> ${
+      data.location
+      }</a>`
+      : ""
+    }
                    <a class="nav-link" target="_blank" rel="noopener noreferrer" href="${
-                     data.html_url
-                   }"><i class="fab fa-github-alt"></i> GitHub</a>
+    data.html_url
+    }"><i class="fab fa-github-alt"></i> GitHub</a>
                    ${
-                     data.blog
-                       ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="${
-                           data.blog
-                         }"><i class="fas fa-rss"></i> Blog</a>`
-                       : ""
-                   }
+    data.blog
+      ? `<a class="nav-link" target="_blank" rel="noopener noreferrer" href="${
+      data.blog
+      }"><i class="fas fa-rss"></i> Blog</a>`
+      : ""
+    }
                 </nav>
              </div>
              <main>
@@ -241,5 +241,5 @@ function generateHTML(data) {
           </div>
        </body>
       </html>`;
-                  }
-        module.exports = generateHTML
+}
+module.exports = generateHTML
